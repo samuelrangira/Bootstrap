@@ -33,8 +33,7 @@
                     <a 
                     role ="button" 
                     class="btn btn-info btn-lg text-nowrap"
-                    data-toggle="modal"
-                    data-target="#reserveModal"
+                    id ="reserveButton"
                     
                     >Reserve Campsite</a>
                 </div>
@@ -234,7 +233,7 @@
                             <div class="carousel-caption">
                                 <h3>Chrome River Campground</h3>
                                 <p class="d-none d-sm-block">
-                                    Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.
+                                    Spend a few sunny days and starry nights beneath a canopy of old-growth first at this enchanting spot by the Chrome River.
                                 </p>
                             </div>
                         </div>
@@ -247,12 +246,13 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    
-                </div>
-                
                     <button class="btn btn-danger btn-sm" id="carouselButton">
                         <i class="fa fa-pause"></i>
                     </button>
+                
+                </div>
+                
+                    
                     
                 
 
@@ -343,15 +343,18 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
+    <!-- build: js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $('#reserveModal').modal(options)
     </script>
-    <script src="js/scripts.js">
-   
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    
+
 
 </body>
 
